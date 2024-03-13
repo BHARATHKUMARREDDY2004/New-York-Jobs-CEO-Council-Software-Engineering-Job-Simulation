@@ -8,16 +8,6 @@ The bug occurs in the `calculate_total` method of the `Invoice` class. When calc
 
 ## Bug Fix
 To fix the bug, the discount should be applied to the total price of each individual item before summing up all item totals. The corrected equation ensures that the discount is applied accurately to each item's total price.
-# Spinvoice Bug Fix
-
-## Overview
-Spinvoice is a billing system designed to automatically generate invoices. However, a recent bug has been identified in the codebase related to the way discounts are applied to the final price of the invoice. This README outlines the issue, provides a solution, and guides users on how to use the fixed version of the code.
-
-## Bug Description
-The bug occurs in the `calculate_total` method of the `Invoice` class. When calculating the total amount of the invoice, the current implementation applies the discount incorrectly, resulting in an incorrect final price.
-
-## Bug Fix
-To fix the bug, the discount should be applied to the total price of each individual item before summing up all item totals. The corrected equation ensures that the discount is applied accurately to each item's total price.
 
 ```python
 item_total_price = price + (price * tax)  # Calculate the total price of the item including tax
